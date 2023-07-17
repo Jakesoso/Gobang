@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>五子棋对战</title>
+    <link rel="stylesheet" href="css/interface.css">
+	<script src="js/game.js"></script>
+</head>
+<body>
+	<h1>五子棋对战</h1>
+
+	<div id="big-board">
+		<div id="game-board">
+			<!-- 游戏板格子 -->
+			<script>draw_board()</script>
+		</div>
+
+	</div>
+
+	<div id="player-info">
+        <span id="current-player">当前落子方：黑方</span>
+	</div>
+
+	<button id="reset-btn" class="ingame-btn" onclick="location.reload();">重新开始</button>
+	<button id="back-btn" class="ingame-btn"><a href="index.html">返回</a></button>
+
+	<script>multi_player()</script>
+	
+</body>
+</html>
